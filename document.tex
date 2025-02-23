@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\usepackage{array} % Pacote necessário
+
+\begin{document}
+
+% Tabela com colunas de tamanho fixo, texto alinhado horizontalmente e verticalmente ao centro.
+% Para alinha com o topo da célula troque o  parâmentro 'm' por 'p'.
+% Para alinhar a pela borda inferior, troque 'm' por 'b'
+
+	\begin{tabular}{|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{4cm}|}
+		\hline
+		Linha 1 Coluna 1 centralizada & Linha 1 Coluna 2 centralizada & Linha 1 Coluna 3 centralizada \\
+		\hline
+		Linha 2 Coluna 1 centralizada & Linha 2 Coluna 2 centralizada & Linha 2 Coluna 3 centralizada \\
+		Todas as & colunas com & Tamanho de 4cm \\
+		\hline
+	\end{tabular}
+	
+\end{document}
