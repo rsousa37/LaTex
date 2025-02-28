@@ -1,0 +1,20 @@
+% Modelo Tabela 2
+% Fonte: https://medium.com/@vo.freelancer5/nota-de-rodap%C3%A9-em-tabelas-latex-f826bdbd1436 Acesso: 28/02/2025
+
+\usepackage{booktabs} % Para as linhas da tabela 2
+
+\begin{table}[!ht]
+  \centering
+  \caption{Tabela exemplo (método 1)}
+  % corpo da tabela
+  \begin{tabular}{ p{2.5cm} p{2cm} p{2.75cm} }
+    \toprule
+    \textbf{ID ordem} & \textbf{Itens} & \textbf{Receita (R\$)} \\ 
+    \midrule
+    001 & 2 & 100 \\
+    002 & 5 & 360 \\
+    003 & 10 & 1225 \\
+    \bottomrule
+  \end{tabular}\\ \smallskip
+  {\small Nota: 30/09/2024 às 19:00.} % nota
+\end{table}
