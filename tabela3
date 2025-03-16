@@ -1,0 +1,25 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{array} %pacote necessário para uso do parâmetro m
+
+\begin{document}
+	\begin{table}[!h]
+		\centering
+		\caption{Cabeçalho} \vspace{0.5mm}
+		\begin{tabular}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+			\hline
+			\multicolumn{2}{|c|}{\textbf{Duas colunas combinadas}}  & \multicolumn{2}{|c|}{\textbf{Duas colunas combinadas}}\\
+			\hline
+			\textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} & \textbf{Coluna 4}\\
+			\hline
+			A & B & C & D\\
+			\hline
+			A & B & C & D\\
+			\hline
+			\multicolumn{4}{l}{Fonte:} 
+		\end{tabular}
+		\label{cabeca}
+	\end{table}
+\end{document}
